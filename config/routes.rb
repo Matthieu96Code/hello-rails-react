@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # resources :greetings, only: [:index, :show] 
 
   namespace :api do
-    resources :greetings
+    resources :greetings, only: [:index]
   end
 
   # get '/api/greeting', to: 'greetings#greeting'
